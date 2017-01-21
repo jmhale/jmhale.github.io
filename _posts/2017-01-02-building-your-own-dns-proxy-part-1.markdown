@@ -223,4 +223,4 @@ That’s it! If you used my zone config above, then you can go to <icanhazip.com
 Something to note. I’ve been hearing that some of the larger services, such as Netflix, are getting wise to this trick and are wholesale blocking IP ranges owned by popular cloud providers. I haven’t experienced it yet, but I don’t use this for Netflix. YMMV.
 
 This is a largely manual process and is good for a POC, but any decent DevOps engineer or sysadmin would never use this for “production”.
-In my next post, I’ll go over how to automate deploying and replacing these proxies, using code and cloud-init. Then finally, we’ll tie it all together in Jenkins, using its DSL, written in Groovy.
+In my next post, I’ll go over [how to automate deploying and replacing these proxies, using code and cloud-init]({{ site.baseurl }}{% post_url 2017-01-18-building-your-own-dns-proxy-part-2 %}). Then finally, we’ll tie it all together in Jenkins, using its DSL, written in Groovy.
