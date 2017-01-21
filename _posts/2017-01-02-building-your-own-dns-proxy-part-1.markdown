@@ -21,7 +21,7 @@ Once I understood how these services worked, I realized that a DIY solution wasn
 Of course, the real cost here isn’t the compute, as these types of proxies don’t really *do* much, but rather the network transit. If you’re only proxying one or two heavy hitters, in terms of bandwidth utilization, then this shouldn’t be a huge issue.
 
 ***
-
+<br>
 
 ## Step one: Get set up.
 You’ll need to pick out a cloud or VPS provider to host the proxy on. Since I was running an instance on DigitalOcean to host a couple of websites at the time, I already had an account set up, so I’m built this out there. However, this can be easily adapted to use any IaaS provider.
@@ -50,7 +50,7 @@ apt-get install -y sniproxy bind9
 Note: At the time of this writing, sniproxy didn’t have a package for Ubuntu 16.04. So, unless we choose to build it from source instead, we’ll have to pin our instance to 14.04 for now.
 
 ***
-
+<br>
 
 ## Step two: Proxy that traffic
 Sniproxy proxies traffic based on the host set in the TCP connection, so it can forward HTTPS traffic without the need to decrypt it. This is fine, since we really don’t care what’s inside the packets, we just need to move them along.
@@ -99,7 +99,7 @@ table {
 {% endhighlight %}
 
 ***
-
+<br>
 
 ## Step three: Intercept your own DNS
 Now we need to set up something to listen for DNS queries and forward them to our proxy. Bind has been around forever and is battle-tested.
@@ -174,7 +174,7 @@ The last two files are the interesting ones. Note that the db.override file look
 The last file, zones.override, does exactly that. Specifies the zones to override and uses db.override for them instead. Modify this to meet your needs.
 
 ***
-
+<br>
 
 ## Step four: Lock it all down
 This would be a crappy security blog if I advocated for leaving services open for anyone to abuse. To make sure that doesn’t happen, we’ll need to restrict access to these services (and administration of the node itself) to a subset of IPs.
@@ -182,7 +182,7 @@ DigitalOcean doesn’t provide a firewall at the IaaS layer, unlike AWS or GCE, 
 ufw is set to deny-all, by default. Where as iptables will allow-all until told otherwise. So, you’ll want wait until your rules are in place before you enable it, lest you lock yourself out of your instance and have to start over.
 You’ll need to allow four ports for everything to work:
 
-{% highlight shell %}
+{% highlight text %}
 TCP/80 — Proxying non-HTTPS traffic.
 TCP/443 — Proxying HTTPS traffic.
 TCP/22 — SSH access for admin purposes.
@@ -202,7 +202,7 @@ ufw enable
 {% endhighlight %}
 
 ***
-
+<br>
 
 ## Step five: Turn it on and point traffic to it
 Once you have all of your configs in place, you can start (or restart) the three services and make sure that they are set to start on boot, in case your instance needs to be restarted without your knowledge (welcome to the cloud). ufw is already running and will start on boot, so no further action is needed there.
