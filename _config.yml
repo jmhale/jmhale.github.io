@@ -19,6 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   These are my thoughts and experiences from a DevOps world
   that is starting to intersect with a Security one. Maybe
   some photography sprinkled in.
+  PGP: 0xC0EE29073A219F19
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.dogsec.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jameshaledc
