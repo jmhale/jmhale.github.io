@@ -3,25 +3,33 @@ layout: post
 title:  "Configuring AWS CLI access with MFA"
 date:   2017-06-03 08:00:00 -0500
 ---
-When protecting important resources online these days, MFA is a must. Bank accounts, utilities, e-mail accounts, etc. Protecting your account on your infrastructure provider should be no different. Especially considering not doing so can cause you great financial pain if someone deletes your critical resources, exfiltrates your data or spins up their own Bitcoin mining operation, at your expense.
+When protecting important resources online these days, MFA is a must. Bank accounts, utilities, e-mail accounts, etc.
+
+Protecting your account on your infrastructure provider should be no different. Especially considering not doing so can cause you great financial pain if someone deletes your critical resources, exfiltrates your data or spins up their own Bitcoin mining operation, at your expense.
 
 AWS’ IAM, thankfully, has supported MFA for user accounts for quite some time now. Users can log into their accounts, register their virtual MFA token (Google Authenticator or what have you) and you’re off and running.
 
-However, if you’re dealing with, or you yourself are, a power user who requires CLI access, the equation changes a bit. How do you leverage MFA when accessing AWS’ APIs?
+However, if you’re dealing with, or you yourself are, a power user who requires CLI access, the equation changes a bit.
+
+How do you leverage MFA when accessing AWS’ APIs?
 
 AWS provides a number of documents on the subject, which revolve around one of two use cases:
 
-1) You’re accessing resources in the SAME AWS account that your IAM user resides.
+1. You’re accessing resources in the SAME AWS account that your IAM user resides.
 
-2) You’re accessing resources from a DIFFERENT AWS account as your IAM user.
+2. You’re accessing resources from a DIFFERENT AWS account as your IAM user.
 
  Case #2 is pretty well documented and the user experience is nice and easy. After you set up your roles and MFA, you simply put the relevant role and MFA ARNs into your `~/.aws/config` file and awscli takes care of the rest. It handles the MFA token prompt and all of the STS magic in the background. You just call your service with the proper profile name. Easy peasy.
 
-The first case, however, isn’t as straight forward. At least, not the way AWS’ documentation makes it out to be. Their documentation states that, in order to access your MFA-protected resources, you’ll need to make a separate call to `sts:GetSessionToken`, authenticating with your TOTP token, to get a set of temporary credentials, then take those and inject them either into an environment variable, or into your awscli config file. Oh, and when your STS token expires, you’ll have to do this all over again. Why is this so cumbersome? Especially considering the fact that, in case #1, with the cross-account assume role method, awscli is doing the EXACT SAME THING, but the handling of the STS credentials is taken care of automatically.
+The first case, however, isn’t as straight forward. At least, not the way AWS’ documentation makes it out to be. Their documentation states that, in order to access your MFA-protected resources, you’ll need to make a separate call to `sts:GetSessionToken`, authenticating with your TOTP token, to get a set of temporary credentials, then take those and inject them either into an environment variable, or into your awscli config file. Oh, and when your STS token expires, you’ll have to do this all over again.
+
+Why is this so cumbersome? Especially considering the fact that, in case #1, with the cross-account assume role method, awscli is doing the EXACT SAME THING, but the handling of the STS credentials is taken care of automatically.
 
 It’s been my experience as both an administrator and a security professional, that if you significantly increase the level of effort that users need to go through to do their everyday job, they’ll either find a way to go around you and your protections technologically (they build in some sort of back door access, without these extra steps) or administratively (they scream up their chain of command until you get orders to rip it all out).
 
-In reality, it’s actually quite easy to achieve the user experience of case #2, but with everything being in the same AWS account. Instead of using `GetSessionToken` for our temporary credentials, we’ll simply assume a “local” role for admin access (as opposed to a cross-account role).
+In reality, it’s actually quite easy to achieve the user experience of case #2, but with everything being in the same AWS account.
+
+Instead of using `GetSessionToken` for our temporary credentials, we’ll simply assume a “local” role for admin access (as opposed to a cross-account role).
 
 The premise of the local role is identical to that of the cross-account role, except in your role’s trust policy, you just specify the same account number that you’re in, instead of a different one.
 
