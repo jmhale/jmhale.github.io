@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Configuring AWS CLI access with MFA"
 date:   2017-06-03 08:00:00 -0500
 ---
@@ -8,6 +8,8 @@ When protecting important resources online these days, MFA is a must. Bank accou
 Protecting your account on your infrastructure provider should be no different. Especially considering not doing so can cause you great financial pain if someone deletes your critical resources, exfiltrates your data or spins up their own Bitcoin mining operation, at your expense.
 
 AWS’ IAM, thankfully, has supported MFA for user accounts for quite some time now. Users can log into their accounts, register their virtual MFA token (Google Authenticator or what have you) and you’re off and running.
+
+<!--break-->
 
 However, if you’re dealing with, or you yourself are, a power user who requires CLI access, the equation changes a bit.
 

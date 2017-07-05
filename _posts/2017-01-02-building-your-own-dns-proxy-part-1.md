@@ -1,9 +1,12 @@
 ---
-layout: post
+layout: default
 title:  "Building your own DNS proxy, part 1: The basics"
 date:   2017-01-02 17:00:00 -0500
 ---
 Over the past year, I have explored various DNS “smart” proxy services to use in a couple of my environments. The experience with some of these paid services, like Unblock.us and Unlocator, left a lot to be desired, so I decided to set out and build my own.
+
+<!--break-->
+
 The paid services worked OK, when they did work. They did not, however, operate at a “set it and forget it” level of stability. At least, not enough for my liking.
 
 When I’m working on a personal project, I strive to be bothered as little as possible, once it’s complete. So, if I have to keep mucking with configurations or white listing IPs, on an ongoing basis, then I’m going to seriously start looking for a different way to do things.
