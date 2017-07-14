@@ -4,4 +4,4 @@ layout: default
 permalink: /about/
 ---
 
-WIP
+[jameshale.me](https://jameshale.me)
