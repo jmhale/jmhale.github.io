@@ -4,4 +4,4 @@ layout: default
 permalink: /about/
 ---
 
-[jameshale.me](https://jameshale.me)
+[jameshale.net](https://jameshale.net)
