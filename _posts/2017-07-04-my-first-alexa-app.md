@@ -46,9 +46,14 @@ My wife loved it, so my mission was accomplished for now. I'll get around to mak
 ## Rewrite in a real language
 Two freakin' years later is the next time I would touch this thing. Over that time, my wife had been telling her friends, who all live in the area and also commute by bus, and who also have Amazon Echos, about my accomplishment. It generated a lot of interest among them, but alas, since it was still in development, I couldn't share it with any Echos not registered to me.
 
+In the intervening years, AWS Lambda rolled out support for several languages, including Python, which happens to be my language of choice (read: the one I suck the least at). Now I have no excuses for this project to live on in developer purgatory.
+
 One Saturday morning, it was already too damn hot to go for a bike ride by the time I got up, so I said screw it. I made my coffee, sat down at my table and fired up a brand new Python project.
 
-In the intervening years, AWS Lambda rolled out support for several languages, including Python, which happens to be my language of choice (read: the one I suck the least at). Now I have no excuses for this project to live on in developer purgatory.
+So much time had passed since I last wrote anything for Alexa, I had to completely relearn all of the SDK jargon in my head (wait, what is an intent again?). I thought that I might be able to just port the existing JS code that I had written for this over to Python, but I abandoned that idea rather quickly. I figured that it would be easier to get a Hello World going in the Python Alexa SDK, then iterate on that, rebuilding the NextBus logic as I went alone. There are certain advantages to doing things this way. Not least of which allow you to start coding with a more mature look of how you want things to come out. In my case, the "first draft" of this project contained a lot of goofy/hacky logic that I was more than happy to ditch here.
+
+
+
 
 ## Time to go live!
 
