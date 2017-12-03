@@ -16,3 +16,27 @@ In my job as an Automation Engineer (or a DevOps engineer, saying what you want 
 I'm not messing with this DNS proxy all the time. I just want it to work and then I can forget about it and work on other cool stuff (or binge watch Netflix). So, I want to be able to forget about it.
 
 In the intervening nine months since I wrote Parts 1 & 2 of this (sorry Scott), I've done exactly that. I had to go back and see what the hell I did, in order to write a semi-coherent blog post about it. Although, the fact that I haven't had to even touch this set-up in that time should lend a clue to it's robustness.
+
+
+Setting up Gradle:
+
+- `brew cask install java`
+- `brew install gradle`
+- `gradle init`
+
+__If you want Codenarc:__
+
+Stub out your ruleset configs:
+- `mkdir -p ./config/codenarc`
+- `touch ./config/codenarc/ruleset.groovy`
+- `touch ./config/codenarc/ruleset-test.groovy`**
+
+```
+apply plugin: 'codenarc'
+
+codenarc {
+  codenarcMain {
+    configFile file('config/codenarc/ruleset.groovy')
+  }
+}
+```
