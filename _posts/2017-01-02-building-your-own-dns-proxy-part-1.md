@@ -32,16 +32,16 @@ You’ll need to pick out a cloud or VPS provider to host the proxy on. Since I 
 I created an instance (a “droplet”, in DO’s parlance), using their Ubuntu 14.04 LTS image. I gave it my SSH key to use and assigned to it a floating IP address (Elastic IP, for the AWS users). The reason for the floating IP is that I want to be able to change out the instance, without having to go back and update DNS settings on multiple endpoints (computers, routers, etc). Just re-associate.
 
 Ubuntu 14.04 LTS works fine here
-![]({{ site.url }}/assets/dns-proxy-pt1-1.png)
+![]({{ site.url }}/assets/images/dnsproxy-pt1/dns-proxy-pt1-1.png)
 
 Choose the smallest size you need, based on the amount of network transit.
-![]({{ site.url }}/assets/dns-proxy-pt1-2.png)
+![]({{ site.url }}/assets/images/dnsproxy-pt1/dns-proxy-pt1-2.png)
 
 Pick where you want to “appear” to be coming from.
-![]({{ site.url }}/assets/dns-proxy-pt1-3.png)
+![]({{ site.url }}/assets/images/dnsproxy-pt1/dns-proxy-pt1-3.png)
 
 Name it something sensible and fire away!
-![]({{ site.url }}/assets/dns-proxy-pt1-4.png)
+![]({{ site.url }}/assets/images/dnsproxy-pt1/dns-proxy-pt1-4.png)
 
 Once the instance came up, I installed bind9, to serve DNS requests, sniproxy, for the actual passing of traffic, and their dependencies.
 {% highlight shell %}
