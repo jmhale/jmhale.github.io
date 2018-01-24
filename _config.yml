@@ -8,9 +8,10 @@ baseurl: ""
 url: "https://dogsec.io"
 twitter_username: d0gsec
 github_username:  jmhale
+google_analytics: UA-83291518-2
 repository: jmhale/jmhale.github.io
 markdown: kramdown
-theme: jekyll-theme-midnight
+theme: jekyll-theme-minimal
 gems:
   - jekyll-feed
 exclude:
