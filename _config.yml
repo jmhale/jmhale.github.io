@@ -1,16 +1,17 @@
 title: dogsec
 email: james@dogsec.io
 description: > # this means to ignore newlines until "baseurl:"
-  DevOps. Security. Dogs.<br>
+  Cloud. Security. Dogs.<br>
   Not necessarily in that order.<br>
   PGP: 0xC0EE29073A219F19
 baseurl: ""
 url: "https://dogsec.io"
 twitter_username: d0gsec
 github_username:  jmhale
+google_analytics: UA-83291518-2
 repository: jmhale/jmhale.github.io
 markdown: kramdown
-theme: jekyll-theme-midnight
+theme: jekyll-theme-minimal
 gems:
   - jekyll-feed
 exclude:

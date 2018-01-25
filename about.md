@@ -14,4 +14,4 @@ My name is James. I'm a Infrastructure/Automation/DevOps/whatever engineer with 
 
 Dogs are awesome and make life better. I have a pup, named Ollie. He's cute, but he can be a butt sometimes.
 
-This blog is meant to contain my musings on projects that I'm working on or stuff that I find interesting that. I'm terrible at writing, and especially writing on a regular basis, so there's that.
+This blog is meant to contain my musings on projects that I'm working on or stuff that I find interesting. I'm terrible at writing, and especially writing on a regular basis, so there's that.
