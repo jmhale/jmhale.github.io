@@ -4,7 +4,6 @@ title:  "My Shmoocon Retrospective"
 date:   2018-01-25 07:00:00 -0500
 ---
 
-##### Shmoocon 2018
 Back to reality after Shmoocon 2018, which was easily the best con that I've been to so far. I got more out of Day 1 of Shmoocon than I did out of entire week of some certain other large cloud-y conferences. Granted, this was my very first con in the InfoSec space, so that may have had something to do with it, but overall, I loved the format, the talks, the people, and the extracurricular activities (CTF, Lockpick Village, etc). I loved it so much that I wanted to do an incredibly disjointed write-up on my experience. Enjoy!
 
 <!--break-->

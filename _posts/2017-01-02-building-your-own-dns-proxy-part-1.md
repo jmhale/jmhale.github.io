@@ -3,6 +3,7 @@ layout: default
 title:  "Building your own DNS proxy, part 1: The basics"
 date:   2017-01-02 17:00:00 -0500
 ---
+
 Over the past year, I have explored various DNS “smart” proxy services to use in a couple of my environments. The experience with some of these paid services, like Unblock.us and Unlocator, left a lot to be desired, so I decided to set out and build my own.
 
 <!--break-->

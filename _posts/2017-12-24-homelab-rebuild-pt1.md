@@ -3,6 +3,7 @@ layout: default
 title:  "The Great Home Lab Rebuild -- Part 1: Storage"
 date:   2017-12-24 17:00:00 -0500
 ---
+
 I returned from AWS re:Invent 2017, opened closet door that houses my home lab gear and heard *that* sound. You know the sound. Time to take action. So, do I buy another drive to keep the PC or NAS (I wasn't sure which at this point), or do I rebuild the whole thing?
 
 Well, since all of my lab gear was pushing 10 years, and a blog post about a drive swap would be boring AF, you can guess where we're going...

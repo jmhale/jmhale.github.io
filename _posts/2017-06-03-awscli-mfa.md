@@ -3,6 +3,7 @@ layout: default
 title:  "Configuring AWS CLI access with MFA"
 date:   2017-06-03 08:00:00 -0500
 ---
+
 When protecting important resources online these days, MFA is a must. Bank accounts, utilities, e-mail accounts, etc.
 
 Protecting your account on your infrastructure provider should be no different. Especially considering not doing so can cause you great financial pain if someone deletes your critical resources, exfiltrates your data or spins up their own Bitcoin mining operation, at your expense.
