@@ -1,0 +1,3 @@
+Contact: security@dogsec.io
+Contact: https://twitter.com/d0gsec
+Encryption: https://dogsec.io/key.gpg.asc
