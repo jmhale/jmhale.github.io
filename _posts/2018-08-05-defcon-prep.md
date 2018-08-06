@@ -15,7 +15,7 @@ This is my first DEF CON, so I'm not really sure what exactly to expect and what
 ##### What I'm *not* bringing
 Figuring out what to bring is a lot easier when you can cross stuff off the list right away.
 
-- Work computer. This is really a no-brainer for me. My work laptop has access to our company's VPN and our production systems. It has full disk encryption enabled and to get to any of our systems, you need to get past several layers of auth and MFA, but this is still a high-value target. My days at camp are already blocked out at work, so I am not expecting the need to do actual work to come up. Besides, is my job is paying a lot of money to fly me out to Vegas for DEF CON, so I doubt they want me wasting that on day-to-day work? I can answer e-mails and chat from my phone. Everything else can wait until I'm back in D.C.
+- Work computer. This is really a no-brainer for me. My work laptop has access to our company's VPN and our production systems. It has full disk encryption enabled and to get to any of our systems, you need to get past several layers of auth and MFA, but this is still a high-value target. My days at camp are already blocked out at work, so I am not expecting the need to do actual work to come up. Besides, is my job is paying a lot of money to fly me out to Vegas for DEF CON, so I doubt they want me wasting that on day-to-day work. I can answer e-mails and chat from my phone. Everything else can wait until I'm back in D.C.
 
 - DSLR. Infosec cons are pretty hostile to photos in general, and I've been to Vegas a bunch already, I really don't need to spend any time taking photos for my own enjoyment. If something comes up, my Pixel is a good stand in.
 
@@ -46,8 +46,8 @@ This VPN will exist for the duration of DEF CON, at which point, I'll simply ter
 
 I do most of my AWS infra work in Terraform. Since I already had my normal VPC and VPN defined there, it was trivial to duplicate those definitions for an additional DEF CON-specific VPC and VPN instance.
 
-- Gist of my VPC set-up: (https://gist.github.com/jmhale/79a7d1f0a535fc3add83b5a87f6c7d47)
-- Gist of my VPN set-up: (https://gist.github.com/jmhale/86c27e245fc47f39998702121bdfecc6)
+- Gist of my VPC set-up: [https://gist.github.com/jmhale/79a7d1f0a535fc3add83b5a87f6c7d47]
+- Gist of my VPN set-up: [https://gist.github.com/jmhale/86c27e245fc47f39998702121bdfecc6]
 
 These won't work right out of the box. As you'll need some files hosted in a S3 bucket for OpenVPN to use. Namely, the `server.conf` and a SSL certificate and private key. Also, these TF gists assume that you have a DNS zone hosted in Route53, so AWS can just add an entry for your VPN server.
 
