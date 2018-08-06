@@ -5,12 +5,12 @@ permalink: /about/
 ---
 
 IRL me: [jameshale.net](https://jameshale.net)<br>
-Twitter: [@d0gsec](https://twitter.com/d0gsec)<br>
+Twitter: [@hale_sec](https://twitter.com/hale_sec)<br>
 Mastodon: [@dogsec@infosec.exchange](https://infosec.exchange/@dogsec)<br>
 IRC: dogsec on Freenode<br>
-E-mail: james at dogsec dot io
+E-mail: james at halesec dot com
 
-My name is James. I'm a Infrastructure/Automation/DevOps/whatever engineer with a passion for Security. 
+My name is James. I'm a Infrastructure/Automation/DevOps/whatever engineer with a passion for Security.
 
 Dogs are awesome and make life better. I have a pup, named Ollie. He's cute, but he can be a butt sometimes.
 
