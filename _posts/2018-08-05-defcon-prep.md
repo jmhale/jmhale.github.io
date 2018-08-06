@@ -4,7 +4,11 @@ title:  "Preparing for DEF CON"
 date:   2018-08-05 07:00:00 -0500
 ---
 
-As so many in the infosec space are getting ready to depart for summer camp in Las Vegas, I'm starting to gear up for my first DEF CON experience. There are many conflicting schools of thought on what sort of tech you should bring with you, from the uber-paranoid "bring nothing at all" to the lackadaisical thinking of treating it like any other event and bring what you want. This is my first DEF CON, so I'm not really sure what exactly to expect and what advice is rooted in reality and what is merely FUD. To that end, I'm trying to strike a decent balance between the two.
+As so many in the infosec space are getting ready to depart for summer camp in Las Vegas, I'm starting to gear up for my first DEF CON experience.
+
+There are many conflicting schools of thought on what sort of tech you should bring with you, from the uber-paranoid "bring nothing at all" to the lackadaisical thinking of treating it like any other event and bring what you want.
+
+This is my first DEF CON, so I'm not really sure what exactly to expect and what advice is rooted in reality and what is merely FUD. To that end, I'm trying to strike a decent balance between the two.
 
 <!--break-->
 
@@ -42,8 +46,8 @@ This VPN will exist for the duration of DEF CON, at which point, I'll simply ter
 
 I do most of my AWS infra work in Terraform. Since I already had my normal VPC and VPN defined there, it was trivial to duplicate those definitions for an additional DEF CON-specific VPC and VPN instance.
 
-- Gist of my VPC set-up: https://gist.github.com/jmhale/79a7d1f0a535fc3add83b5a87f6c7d47
-- Gist of my VPN set-up: https://gist.github.com/jmhale/86c27e245fc47f39998702121bdfecc6
+- Gist of my VPC set-up: (https://gist.github.com/jmhale/79a7d1f0a535fc3add83b5a87f6c7d47)
+- Gist of my VPN set-up: (https://gist.github.com/jmhale/86c27e245fc47f39998702121bdfecc6)
 
 These won't work right out of the box. As you'll need some files hosted in a S3 bucket for OpenVPN to use. Namely, the `server.conf` and a SSL certificate and private key. Also, these TF gists assume that you have a DNS zone hosted in Route53, so AWS can just add an entry for your VPN server.
 
