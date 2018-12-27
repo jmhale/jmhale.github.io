@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: post
 title:  "The Great Home Lab Rebuild -- Part 1: Storage"
 date:   2017-12-24 17:00:00 -0500
+tags: homelab
 ---
 
 I returned from AWS re:Invent 2017, opened closet door that houses my home lab gear and heard *that* sound. You know the sound. Time to take action. So, do I buy another drive to keep the PC or NAS (I wasn't sure which at this point), or do I rebuild the whole thing?
@@ -26,7 +27,7 @@ Between that requirement and my NAS letting out it's death rattle, I decided tha
 
 Since storage is the foundation of this set up, and is the most at-risk, getting that sorted would be the first step.
 
-After doing a crapload of research on various Drobo, Synology and QNAP NASes, I decided on the [QNAP TS-453A](https://www.amazon.com/QNAP-Professional-Grade-Attached-Supports-TS-453A-4G-US/dp/B017YB7T6U). I knew that I wanted a 4-bay NAS, as that would provide me a decent level of storage and afford me some future proofing. 
+After doing a crapload of research on various Drobo, Synology and QNAP NASes, I decided on the [QNAP TS-453A](https://www.amazon.com/QNAP-Professional-Grade-Attached-Supports-TS-453A-4G-US/dp/B017YB7T6U). I knew that I wanted a 4-bay NAS, as that would provide me a decent level of storage and afford me some future proofing.
 
 Who doesn't love a good unboxing?!
 ![]({{ site.url }}/assets/images/homelab-pt1/qnap-unboxing-1.jpg)
@@ -39,6 +40,6 @@ I ordered it with a pair of 4TB WD Red's, which are specifically built for runni
 
 The QNAP also has a decent Intel Celeron N3150 Quad Core chip and comes with 4GB of memory in the configuration that I got. So, I was able to offload my Plex Media Server and Crashplan set up to the NAS itself. Admittedly, trying to run Crashplan on the QNAP was kind of a mess, since it needs to run within a Docker container (which QNAP also supports!).
 
-Overall, I'm pretty happy with my choice. 
+Overall, I'm pretty happy with my choice.
 
 I'll keep writing about the rebuild as I go along. I think the next step will be rounding out the storage with two more Reds and then turning my attention to the 960. I intend to evacuate all of the "critical" services off of it, so it's replacement can be strictly a lab machine. I'm thinking a [Skull Canyon NUC](https://www.newegg.com/Product/Product.aspx?Item=N82E16856102166)?!

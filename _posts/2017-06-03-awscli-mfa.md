@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: post
 title:  "Configuring AWS CLI access with MFA"
 date:   2017-06-03 08:00:00 -0500
+tags: aws mfa
 ---
 
 When protecting important resources online these days, MFA is a must. Bank accounts, utilities, e-mail accounts, etc.

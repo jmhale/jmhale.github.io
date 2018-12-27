@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: post
 title:  "Building your own DNS proxy, part 2: Writing the code"
 date:   2017-01-18 17:00:00 -0500
+tags: dns proxy
 ---
 
 [In my first post]({{ site.baseurl }}{% post_url 2017-01-02-building-your-own-dns-proxy-part-1 %}) about building your own DNS “smart” proxy, I touched on the basics of how a smart DNS proxy works, how to build a basic version on a cloud provider and the paid alternatives that are out there. In this post, we’ll take that knowledge and productionalize, operationalize or whatever buzzword you want to use to refer to it as “not sucking”.

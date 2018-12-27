@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: post
 title:  "Preparing for DEF CON"
 date:   2018-08-05 07:00:00 -0500
+tags: conference defcon
 ---
 
 As so many in the infosec space are getting ready to depart for summer camp in Las Vegas, I'm starting to gear up for my first DEF CON experience.

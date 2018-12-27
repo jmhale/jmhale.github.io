@@ -1,14 +1,15 @@
 ---
-layout: default
+layout: post
 title:  "My Shmoocon Retrospective"
 date:   2018-01-25 07:00:00 -0500
+tags: conference shmoocon
 ---
 
 Back to reality after Shmoocon 2018, which was easily the best con that I've been to so far. I got more out of Day 1 of Shmoocon than I did out of entire week of some certain other large cloud-y conferences. Granted, this was my very first con in the InfoSec space, so that may have had something to do with it, but overall, I loved the format, the talks, the people, and the extracurricular activities (CTF, Lockpick Village, etc). I loved it so much that I wanted to do an incredibly disjointed write-up on my experience. Enjoy!
 
 <!--break-->
 
-Shmoocon was my first con experience as a local. I live right up the street from the venue, in Adams Morgan, so I would have had a tough time justifying the cost of the hotel (and my absence) to my wife. That said, I do feel like I missed out on some of the late-night shenanigans because I was trekking back to my apartment each night. That wasn't really a detractor from an overall awesome con experience, just an observation. 
+Shmoocon was my first con experience as a local. I live right up the street from the venue, in Adams Morgan, so I would have had a tough time justifying the cost of the hotel (and my absence) to my wife. That said, I do feel like I missed out on some of the late-night shenanigans because I was trekking back to my apartment each night. That wasn't really a detractor from an overall awesome con experience, just an observation.
 
 This was apparently the first year that Shmoocon gave out electronic badges, which had a WiFi chip (ESP8266) on board that was initially flashed to be a site survey tool for the Con's primary network. I wish that I had a stopwatch going, because the time it took for people to start disassembling their badges to try and hack them was a matter of minutes. It was amazing.
 
@@ -57,7 +58,7 @@ The Polarity Challenge was a neat thing that was put on by [PolarityIO](https://
 There were times that my social anxiety got the best of me. I walked into the Con on Friday, not knowing a soul there. That changed as the weekend went on, and I'm incredibly thankful for it, but the social events of Friday evening were really rough on that front and I eventually just bailed.
 
 ##### Summary
-This was a great first InfoSec con experience for me, overall. Assuming that I'm able to lock down a ticket next year, I'm definitely going back! My key takeaway here is: while going to the talks has its obvious benefits, doing the non-session activities is how you meet people, make friends, and network. 
+This was a great first InfoSec con experience for me, overall. Assuming that I'm able to lock down a ticket next year, I'm definitely going back! My key takeaway here is: while going to the talks has its obvious benefits, doing the non-session activities is how you meet people, make friends, and network.
 
 Lastly, I want to give a huge shout out to Zack ([@zfasel](https://twitter.com/zfasel)) of Urbane Security ([@UrbaneSec](https://twitter.com/UrbaneSec)) for hooking me up with a ticket sale and making my Shmoocon experience possible!
 

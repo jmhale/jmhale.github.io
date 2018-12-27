@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<small>{{ page.date | date: "%Y-%m-%d" }}
+{% if site.read-time %} - {% include read-time.html content=content %}{% endif %}</small>
+<h1>{{ page.title }}</h1>
+
+<p class="view"><small>by {{ page.author | default: site.author }}</small></p>
+
+{{content}}
+
+{% if page.tags %}
+  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+{% endif %}
