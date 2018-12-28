@@ -4,56 +4,69 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>My name is James. I'm a tech nerd and I love to break things so I can try to put them back together in interesting ways.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Tech interests are: security and privacy, automation, Linux, and devops</p>
+
+<p>Some of the non-geeky things that I like to do include rock climbing, cycling, motorcycles, and photography.</p>
+
+***
 
 <h2>Skills</h2>
 
 <ul class="skill-list">
 	<li><b>Cloud/IaaS:</b> AWS, Google Compute Engine, Microsoft Azure</li>
-	<li><b>Languages:</b> Python, Ruby, Golang, Groovy</li>
-	<li><b>Infrastructure Orchestration:</b> Terraform, AWS CloudFormation</li>
+	<li><b>VPN:</b> OpenVPN, Wireguard, ZeroTier</li>
+	<li><b>Programming:</b> Python, Ruby, Golang, Groovy</li>
+	<li><b>Deployment and Automation:</b> Terraform, AWS CloudFormation</li>
 	<li><b>Containers:</b> Docker, Kubernetes</li>
+	<li><b>Virtualization:</b> VMware, Virtualbox, KVM</li>
 	<li><b>CI/CD:</b> Jenkins, Travis-CI, GitLab</li>
-	<li><b>Infosec:</b> OSSEC, Nessus, nmap, Snort</li>
+	<li><b>Infosec:</b> OSSEC, Nessus/Security Center, nmap, Snort</li>
 	<li><b>Configuration Management:</b> Puppet, Chef, Ansible, Saltstack</li>
 	<li><b>Logging:</b> ELK, Graylog, Splunk</li>
 </ul>
 
-<h2>Job History</h2>
-<li>Salesforce.com: April 2018 - Present
-	<ul>
-		<li>Did a thing 1</li>
-		<li>Did a thing 2</li>
-	</ul></li>
-<li>Blackboard: November 2016 - April 2018
-	<ul>
-		<li>Did a thing 1</li>
-		<li>Did a thing 2</li>
-	</ul></li>
-<li>The Washington Post: July 2009 - November 2016
-	<ul>
-		<li>Did a thing 1</li>
-		<li>Did a thing 2</li>
-	</ul></li>
+***
 
-<h2>Education History</h2>
+<h2>Jobs</h2>
+<h3>Salesforce.com</h3>
+<h4>Senior Systems Security Engineer | April 2018 - Present</h4>
+<li>Deployed Terraform to automate and strengthen our Identity and Access Management in AWS GovCloud</li>
+<li>Did a thing 2</li>
+
+
+<h3>Blackboard</h3>
+<h4>Senior DevOps Security Engineer | November 2016 - April 2018</h4>
+<li>Led a team of DevOps engineers to bring security automation to Blackboard's flagship product, Learn.</li>
+<li>Did a thing 2</li>
+
+<h3>The Washington Post</h3>
+<h4>Senior Infrastructure Engineer | July 2009 - November 2016</h4>
+<li>Did a thing 1</li>
+<li>Did a thing 2</li>
+
+***
+
+<h2>Education</h2>
+<h3>University of Massachusetts Amherst</h3>
+<h4>Bachelor of Computer Science | 2009</h4>
+***
 
 <h2>Certifications</h2>
 <ul class="skill-list">
   <li><a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=4&t=c&d=2017-09-28&ci=AWS00157520">AWS Certified Solutions Architect Professional</a></li>
 </ul>
+
+***
+
+<h2>Talks</h2>
+<h4>December 2018</h4>
+<ul class="skill-list">
+  <li>Salesforce Security Speaker Series: Using Terraform for AWS IAM</li>
+</ul>
+
+***
 
 <h2>Projects</h2>
 
