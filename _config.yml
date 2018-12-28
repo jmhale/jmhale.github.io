@@ -29,24 +29,25 @@ permalink: /:title/
 # analytics-piwik-id: 1
 
 # if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: mydisqus # enter this from your disqus account
+# disqus:
+#   shortname: mydisqus # enter this from your disqus account
   # categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
 twitter: jameshaledc
 twitter2: hale_sec
+linkedin: jamesmhale
+github: jmhale
+email: james@jameshale.net
 mastodon:
-  username: dogsec
+  username: halesec
   fediverse: infosec.exchange
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-linkedin: jamesmhale
 # youtube: myyoutube
 # spotify: myspotify
-github: jmhale
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
@@ -55,7 +56,6 @@ github: jmhale
 # medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: james@jameshale.net
 
 authors:
     jameshale:
