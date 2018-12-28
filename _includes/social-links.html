@@ -18,7 +18,7 @@
     {% endif %}
 
     {% if site.mastodon %}
-        <a class="link" data-title="{{ site.mastodon.fediverse }}/@{{ site.mastodon.username }}" href="https://{{ site.mastodon.fediverse }}/@{{ site.mastodon.username }}" target="_blank">
+        <a rel="me" class="link" data-title="{{ site.mastodon.fediverse }}/@{{ site.mastodon.username }}" href="https://{{ site.mastodon.fediverse }}/@{{ site.mastodon.username }}" target="_blank">
             <svg class="icon icon-mastodon"><use xlink:href="#icon-mastodon"></use></svg>
         </a>
     {% endif %}
