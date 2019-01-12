@@ -1,9 +1,9 @@
 # main text of home
 name: James Hale
-bio: Engineer of security. Petter of dogs. Eater of noodles.
+bio: Infosec engineer who specializes in automation and cloud infrastructure.
 
 # twitter summary info
-description: Engineer of security. Petter of dogs. Eater of noodles.
+description: Infosec engineer who specializes in automation and cloud infrastructure.
 
 # if it's an external image, update below for true
 # better with square images
@@ -60,7 +60,7 @@ mastodon:
 authors:
     jameshale:
         name: James Hale
-        bio: Engineer of security. Petter of dogs. Eater of noodles.
+        bio: Infosec engineer who specializes in automation and cloud infrastructure.
         external-image: false
         picture: assets/images/profile.jpg
         twitter: jameshaledc
