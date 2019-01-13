@@ -108,3 +108,10 @@ jekyll-mentions:
 
 include:
   - .well-known
+
+exclude:
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - travis.sh
