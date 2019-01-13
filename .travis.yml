@@ -1,17 +1,27 @@
 language: ruby
 rvm:
- - 2.2.5
-
+- 2.2.5
 before_script:
- - chmod +x travis.sh
-
-script: ./travis.sh
-
+- chmod +x travis.sh
+script: "./travis.sh"
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-
-branches:
-  only:
-    - gh-pages
-    - next
+  - secure: 0XwaRRZ3MrRAs6RD63lOeOgwRcRgSnzPPAlOcloK7ec2DMVhZgKanf/DV1JmrrtdDWeEhWyO3bV+yj69ExFq3Oya9JMuPBDI79fIankhREIwb/XS/enajpHsBmqRqBEAVIPhthNlmj7zgcl/lAzGvV75qxoxp8wOT4VxGJ2MjzW1day238fkoiV/FapGuuPsttf2BlBNmOf05h6d1G7KozJWfKENz3p1AtakH2LIGNlqEisT/EEDWICZX3n4gPBWTyDyW/p5zG/M1a2CXdXOZ3ISHzgiRVZXC9pB+c8W7uHxiSxMtSg1iVw2X7KG1UWARiup10RpdxXnggItMCOUbrxYzAum00qdw4RvH3yC7ZfxI7+qt3mkWenKfcDp+ITAYf6okyuNetuTKsr02Ote/A10+4bNDiNile0VGS5TNK2k3hItVDDWu21CFvMynxAUc0ajwCiSHObSrvw/C3zuEnri0obJiXqQ/ehdCEXRbOBNqa8EKL/r+3zDj5xKlT7P05RkooJ/iOhVv+x0ybmsXJCF8Hj6dpl66edXHkYizB4fKKsHSAG+Cc5KpKGe4uRmPaap5PTXXSmY/B5fCaiPmSzywLnff+uh30JyD2vDKuc5palMoJTxt8vd5JOJqQeWNwXgJX9nAf+B+N3m/0by8HzLAFAuX5XQzHFHgiKv8V4=
+  - secure: hpcvZecBxwQjFJTnKFhqU5Jaji/JEYVD7NoKxAo9TW+mxdySC01X/ty+MwuVexEilq3YiyTxWyyAhorygNIdJXxLYHu7zIuyQfXjwm5iB+irLOiX+yI4QQJG/pWv019bH2BompPzzAUoEAj6kwa3s7uxL0mAJfyaYHTZDQTVOY+ZvGjf8AiRYJTncSyevrxmOHAGVBwYr1Rl5Okd6tBAiSnWCcSDzLH0VTvGC16Zkln4nYYnWLBNya06skozU9/tB4SAl/7hExiNqJd+77W9oF2eyqguzTXWcV2g2quZnP9C651mlyTXJyafTVnA/r9scZmNgJTKh/Ps1OxhkK9I9csEmgpMA3Pwy3bwbXdz+wclznObkZQ8yV54GD3M4OUPF1Bf5Zbcdv9NjZb8Jsmt5gse/W37Ky8XjR7ZdmhQtMATetpbju/75queDV1jV+T/8uaJSV88eXvti5QNKTzV2DbrgxarSyVcf0gGlngsczxL7enF9wGpAU16Vo6YJu8W6Nmbk4zzSU4PUXVHrADQTotRZBDUgf0GMRPDZK8v5EFaZKUmuMLArsjSAHnvZy+IMBJljofBjcOqY6IWlEnQ2F2QMTnpfxO+tdPB9awOoPJncnARp23FUI5c4L2xx3dyujraSp0bEDpd3jYKg2K9dJbTMeMxsJpVVg2OqPdgo8Y=
+deploy:
+  provider: s3
+  access_key_id: AKIAJ4RQKULZGZW6W6ZQ
+  secret_access_key:
+    secure: yeQjmfkJf3ztVSHOl84WFdT+Go86kMNUddxsfBJ/xlu4qLSa5rJQmrbZqoozDTSI5RWvDbPR+FGlQO98l2bpAM9uNHUijoJVfMjhP0/k+o/31Sj20QMqLGNoRgMabd8r4jKg2VZ3RpVnp+iy3HbGQQMKhoVMkG230f1/1Zs3UaKGmtG6LJDTRAB1iLJqv0kBC7aJR6zSoWSfl107B9XwT76m64FgQ3UcMjVTiUGI7GqEEiiiSN4/GSEkdtIXtQDtznp8H45WH41GdTmSJkY5yAxupqytba/AQEIH2Lu+soCH9SoI/+oTozvdc5VzQq6NL4opKrkDfWXKZfpomq+ZR5EACvROdHgld4wjBA78zcQKA5ux+/oW2K/q2pe6rXZLBDpv7us865vA1NFc6s3fMKAdtz+CzO6t7Caz6mH1GHdvnUjGQEOI3kwJgKvdoRwkr8q0HsRCKm8DBHDNkqXapy/8Rp421Z/wCV0Uvn+c++tpTD76663DZDRF+BoXRBzpUa+dyAAlG5cAXX1bRWc3ZKb97juG3hw1WLe1F9jHlyxrWoSOmEJt876zqnFFLnUsmkTnXYqNOxnO6Hd3GXCExkbQcgfBud4/UHjaUZVgMwN/KiAn7VToIotHONHmQ9SoA3HVxyq+Vq+HzxP8vVKwA3dYLY5Fr2trFT5Yf5QhDh8=
+  bucket: jameshale.net
+  on:
+    branch: master
+  local_dir: "./_site"
+  skip_cleanup: true
+  after_deploy:
+  - _deploy/cf_purge.sh
+notifications:
+  slack:
+    rooms:
+      secure: UAAf/i54bygEh+SKsCU65IGrEJ6KONKeXPKucZ2vWVcig7ZzD2EGm1uGIR7izsP5k1h5E+5mSZGRkmHgF1an6ZsrTw8Mlt1vyY/BpG0lNKnSEd4tHzSZHtxIGns8hjQmFys90/cMgUrah/GySpeKH5BydhhqUIZLccdlf3CXEJcxnzHaT514SV22PNz7iMBPtFx2od16ICBzBSSrYx2aJRh83bL/c0ADbwkPxD9lohg/P8BiiMmOr+Y07rkFgarZcV1hFz12mB8RadjpSFhVC0zsdwkMuzLZ3X7R51JPwJMT19+3cBoH2TvMpwQzMAX7Cs/J1UslTh9aCoC4g4blbKRWtUBmG5Yd4obV0HkmiHIUBn9rU96IoalnN8g9QFnAezZF2qBxbngLJnfu5IzJo7CA88EvspZl3+NOZN95OZPJC3vU6v4w6C9BNqQj5YUR/R2JIdAlOdYw3cXUL4CuiEFmjnNfB9ia3FcWds9yHWwW1PufIlupSUSVdE/uar+XC/VH8PCJ0TFr8lbYNHVTeiI+3j0D0k98Mi2AHdehxYKQg4E8PdhRfO20NvAtlak3chiHV8dj16/4vXEJcZ9r7/QWOrNwHEUJ/S8j/X17Bg/y9LaHNq/i4GDOrqxxGq3YGr1nt/jPTrc9AxJrpptp24UzLQlsdwwL8OmVg7MPFWg=
