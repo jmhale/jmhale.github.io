@@ -110,12 +110,3 @@ layout: page
 <ul class="skill-list">
   <li>Salesforce Security Speaker Series: Using Terraform for AWS IAM</li>
 </ul>
-
-***
-
-<h2>Projects</h2>
-
-<ul>
-	<li><a href="https://github.com/jmhale/okta-awscli">okta-awscli</a></li>
-	<li><a href="https://github.com/jmhale/alexa-nextbus">Alexa NextBus (WMATA)</a></li>
-</ul>
