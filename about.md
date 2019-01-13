@@ -25,6 +25,7 @@ layout: page
 	<li><b>VPN:</b> OpenVPN, Wireguard, ZeroTier</li>
 	<li><b>Configuration Management:</b> Puppet, Chef, Ansible, Saltstack</li>
 	<li><b>Logging:</b> ELK, Graylog, Splunk</li>
+	<li>test thing</li>
 </ul>
 
 ***
