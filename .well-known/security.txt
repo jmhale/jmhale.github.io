@@ -1,0 +1,3 @@
+Contact: security@halesec.com
+Contact: https://twitter.com/hale_sec
+Encryption: https://halesec.com/publickey.security@halesec.com.asc
