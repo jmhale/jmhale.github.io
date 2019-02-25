@@ -13,7 +13,7 @@ WireGuard is new-ish on the VPN scene which is dominated by the likes of IPSec a
 
 ## TL;DR: Alright. Shut up and show me the code!
 Here you go!
-(https://github.com/jmhale/terraform-aws-wireguard)
+<https://github.com/jmhale/terraform-aws-wireguard>
 
 ## WireGuard and my motivation
 I myself run OpenVPN, but I find the implementation a bit heavy and a bit hard to manage. I touch the infrastructure so infrequently, that when I have to dive back into it, I have to relearn how it works.
