@@ -4,7 +4,7 @@ title:  "Deploying WireGuard on AWS with Terraform"
 date:   2019-02-24 19:00:00 -0500
 tags: vpn wireguard terraform aws
 ---
-## Introduction to WireGuard and Terraform
+
 I like having a VPN available to me for personal use when I'm traveling. Since I don't at all trust any paid or free VPN service, I run my own in AWS for general privacy and security, as well as one at home to access my infrastructure there, as needed.
 
 WireGuard is new-ish on the VPN scene which is dominated by the likes of IPSec and OpenVPN. I wanted to write a Terraform module to deploy it on AWS.
@@ -15,7 +15,7 @@ WireGuard is new-ish on the VPN scene which is dominated by the likes of IPSec a
 Here you go!
 https://github.com/jmhale/terraform-aws-wireguard
 
-## Motivation
+## WireGuard and my motivation
 I myself run OpenVPN, but I find the implementation a bit heavy and a bit hard to manage. I touch the infrastructure so infrequently, that when I have to dive back into it, I have to relearn how it works.
 
 When I heard about WireGuard, I wanted to give it a try as an alternative to running OpenVPN. I was able to get it set up really quickly, which gave me a lot of confidence that I wasn't misconfiguring something. I then wanted to make the deployment in AWS robust and captured in version control, so I knew how it was put together when I had to come back to it in six months or a year.
