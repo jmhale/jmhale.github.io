@@ -14,7 +14,7 @@ deploy:
   access_key_id: AKIAIDOGIQUECQ5CMNPQ
   secret_access_key:
     secure: Zo39uYZ07d4CAJOJNFPBRUvcvuXDkrynv37xBV38mtqXk2ivS96O9FttgQDc2nYlK5PVY7eQFlaRqDUPKtyVNFc+3B5JRfeT/fkAU0vK1ngEXJNBk+iHDAUdtD0zoBBDMAfN1modK9lUIifHQ6o/ykWmT9QOekXNRog2TZr2XnGda09IPKIAkoOw9RMmNgzULowrI6GH9I9HVeWYt/uYfcUlxB0dU0xVJjmGWpKl4D0T8PWndAUrqyc/KPZP6JVPgn/saJnf8Kn4aSVS69VFVUGSZqmpRtxeq0p0HPrMbWQyHDl+ovCjkod8ikp1LmcG+684oYU/LtyQe6ICofYLJZogQQEIOlHTgo9e9RJ81N+gn4KpnfFUmVsI4dBx64kFU0yhEfDpDU1INTyMFb0OtlyK/SnRCG2XxV7co4+lSW0qhfrqDvcGeHZdKZX+ar1w1fgL3JvZFWMrM0EMS5rmQifu4qgA5S14xDIaCIVFWCMq/OytNOquRaCn/mkwjtXyYRtS8lV8OpqYQ9JFTo6jTWHln3mca9e+26l5AV41diR52AYbzhoPW/2NDD6n0gXuwxDB27RolpYsRkW5RXEmWYwyWNbH1OQiFenF/eZrRgzSIOF7eO4VhDNsJTfgPsRK/1ThR+vXcDBXfeaR3mgrbyQaP7ekk0060D4QrZv0Ty4=
-  bucket: jameshale.net
+  bucket: hale.dev
   on:
     branch: master
   local_dir: "./_site"
