@@ -100,6 +100,7 @@ layout: page
 
 <h2>Certifications</h2>
 <ul class="skill-list">
+	<li><a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=7&t=c&d=2019-03-18&ci=AWS00157520">AWS Certified Security Specialty</a></li>
   <li><a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=4&t=c&d=2017-09-28&ci=AWS00157520">AWS Certified Solutions Architect Professional</a></li>
 </ul>
 
