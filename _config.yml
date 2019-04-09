@@ -14,7 +14,7 @@ picture: assets/images/profile.jpg
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: https://hale.dev/hale-cv.pdf
+resume-url: https://hale.dev/cv.pdf
 
 url: https://hale.dev
 # your url: http://USERNAME.github.io
