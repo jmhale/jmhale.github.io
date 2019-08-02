@@ -31,7 +31,8 @@ layout: page
 
 <h2>Jobs</h2>
 <h3>Salesforce.com</h3>
-<h4>Senior Systems Security Engineer | April 2018 - Present</h4>
+<h4>Lead Systems Security Engineer | August 2019 - Present</h4>
+<h4>Senior Systems Security Engineer | April 2018 - August 2019</h4>
 <ul class="skill-list">
 	<li>Maintain AAA (Authentication, Authorization and Accounting) infrastructure for Salesforce's core product.</li>
 	<li>Led effort to deploy Terraform across the Government Cloud infrastructure. Focused on AWS GovCloud Identity and Access Management.</li>
