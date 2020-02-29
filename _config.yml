@@ -35,7 +35,7 @@ analytics-google: 'UA-83291518-1'
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
-twitter: jameshaledc
+twitter: 0xhale
 twitter2: hale_sec
 linkedin: jamesmhale
 github: jmhale
@@ -63,7 +63,7 @@ authors:
         bio: Infosec engineer who specializes in automation and cloud infrastructure.
         external-image: false
         picture: assets/images/profile.jpg
-        twitter: jameshaledc
+        twitter: 0xhale
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
