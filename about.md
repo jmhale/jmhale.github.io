@@ -6,7 +6,7 @@ layout: page
 
 <p>My name is James. I'm a tech nerd and I love to break things so I can try to put them back together in interesting ways.</p>
 
-<p>Tech interests are: security and privacy, automation, Linux, and devops</p>
+<p>Tech interests are: security and privacy, automation, Linux, and DevOps</p>
 
 <p>Some of the non-geeky things that I like to do include rock climbing, cycling, motorcycles, and photography.</p>
 
@@ -109,7 +109,11 @@ layout: page
 ***
 
 <h2>Talks</h2>
-<h4>December 2018</h4>
+<h4>2018</h4>
 <ul class="skill-list">
   <li>Salesforce Security Speaker Series: Using Terraform for AWS IAM</li>
+</ul>
+<h4>2021</h4>
+<ul class="skill-list">
+  <li>Salesforce SHIFT Security Conference: Terraform Static Analysis with Checkov</li>
 </ul>
