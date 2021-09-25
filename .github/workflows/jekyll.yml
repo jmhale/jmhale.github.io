@@ -28,3 +28,21 @@ jobs:
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
     - name: Deploy to AWS S3
       run: aws s3 sync ${{ github.workspace }}/_site/ s3://${{ secrets.AWS_S3_BUCKET_NAME }} --acl public-read --delete --cache-control max-age=604800
+    - name: Purge cache - hale.dev
+      uses: nathanvaughn/actions-cloudflare-purge@master
+      if: success()
+      with:
+        cf_zone: ${{ secrets.CLOUDFLARE_ZONEID_HALEDEV }}
+        cf_auth: ${{ secrets.CLOUDFLARE_AUTH_KEY }}
+    - name: Purge cache - jameshale.net
+      uses: nathanvaughn/actions-cloudflare-purge@master
+      if: success()
+      with:
+        cf_zone: ${{ secrets.CLOUDFLARE_ZONEID_JAMESHALENET }}
+        cf_auth: ${{ secrets.CLOUDFLARE_AUTH_KEY }}
+    - name: Purge cache - jameshale.me
+      uses: nathanvaughn/actions-cloudflare-purge@master
+      if: success()
+      with:
+        cf_zone: ${{ secrets.CLOUDFLARE_ZONEID_JAMESHALEME }}
+        cf_auth: ${{ secrets.CLOUDFLARE_AUTH_KEY }}
