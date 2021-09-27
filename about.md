@@ -31,25 +31,40 @@ layout: page
 
 <h2>Jobs</h2>
 <h3>Salesforce.com</h3>
-<h4>Lead Systems Security Engineer | August 2019 - Present</h4>
-<h4>Senior Systems Security Engineer | April 2018 - August 2019</h4>
+<h4>Senior Manager, Security Engineering | July 2021 - Present</h4>
 <ul class="skill-list">
-	<li>Maintain AAA (Authentication, Authorization and Accounting) infrastructure for Salesforce's core product.</li>
+	<li>Manage a team of 7 engineers. Drive career development discussions, talent reviews, and interview panels. Ensure members of the team are on the right track with engineering deliverables.</li>
+	<li>Coordinate engineering resources with partner teams.</li>
+	<li>Participate in security architecture discussions and provide input to key decision making. Taking the output of these discussions and delivering it to my team and other stakeholders as engineering deliverables.</li>
+	<li>Provide technical leadership and guidance, mentor junior engineers, and participate in code reviews.</li>
+</ul>
+<h4>Lead Systems Security Engineer | August 2019 - July 2021</h4>
+<ul class="skill-list">
+	<li>Technical lead for a team of three engineers. Drove Agile development, acting in Product Owner and Scrum Master roles.</li>
+	<li>Co-authored a project to implement Terraform static code analysis as part of the CI/CD pipeline, using Checkov, eventually scaling up to company-wide use.</li>
+	<li>Responsible for design and implementation of security solutions using AWS native services in GovCloud.</li>
+</ul>
+<h4>Senior Systems Security Engineer | April 2018 - August 2019</h4>
+
+<ul class="skill-list">
+	<li>Maintained AAA (Authentication, Authorization and Accounting) infrastructure for Salesforce's core product.</li>
 	<li>Led effort to deploy Terraform across the Government Cloud infrastructure. Focused on AWS GovCloud Identity and Access Management.</li>
 	<li>Designed federated authentication and centralized logging mechanisms in AWS GovCloud.</li>
-	<li>Use Puppet and other configuration management frameworks to implement security controls for FedRAMP Moderate and High, and DISA IL4 compliance.</li>
+	<li>Used Puppet and other configuration management frameworks to implement security controls for FedRAMP Moderate and High, and DISA IL4 compliance.</li>
 </ul>
-
-
 <h3>Blackboard</h3>
 <h4>Senior DevOps Security Engineer | November 2016 - April 2018</h4>
 <ul class="skill-list">
-	<li>Led a team of DevOps engineers to bring security automation to Blackboard's flagship product, Learn.</li>
-	<li>Helped to design, implement, and deploy security engineering solutions across the Learn SaaS platform.</li>
-	<li>Identified and remediated gaps in security compliance frameworks, including FedRAMP Tailored, FISMA, and ISO 27001.</li>
+	<li>Researched, designed, developed, documented and implemented solutions for fault tolerance, performance, capacity, and configuration management for various data center operations.</li>
+	<li>Defined, planned, designed, and evaluated information security systems.</li>
+	<li>Designed, implemented, and maintained security infrastructure.</li>
+	<li>Led a team of security automation engineers to identify platform vulnerabilities, help design and implement security solutions.</li>
+	<li>Contributed to and maintained security posture of the platform.</li>
+	<li>Served as a mentor to other Security and DevOps engineers.</li>
+	<li>Designed, developed and implemented documentation or tools to facilitate Technical Support team responsibilities.</li>
+	<li>Identified and drove opportunities to improve automation for deployment, management, and tooling, using Python, Ruby and Groovy, among other languages.</li>
 	<li>Supported and improved a highly available and fault tolerant SaaS offering.</li>
 </ul>
-
 <h3>The Washington Post</h3>
 <h4>Senior Infrastructure Engineer | January 2015 - November 2016</h4>
 <ul class="skill-list">
@@ -60,7 +75,6 @@ layout: page
 	<li>Provided expertise to software developers on AWS foundational services, such as EC2 (incl. EBS, ASG, ELB), VPC/Direct Connect, Route53, S3, IAM/KMS, RDS, SNS, SQS, SES, and CloudWatch.</li>
 	<li>Contributed to internal software projects, centered around the orchestration of infrastructure resources and the continuous deployment of containerized applications to test and production environments.</li>
 </ul>
-
 <h4>Unix Systems Engineer | December 2011 - January 2015</h4>
 <ul class="skill-list">
 	<li>Managed physical and cloud-based infrastructure for the print, mobile, and web properties of Washington Post Media.</li>
@@ -71,7 +85,6 @@ layout: page
 	<li>Participated in 24x7 on-call rotation.</li>
 	<li>Assisted with a major datacenter relocation.</li>
 </ul>
-
 <h4>Client Systems Engineer | September 2010 - December 2011</h4>
 <ul class="skill-list">
 	<li>Developed and maintained Windows and Mac desktop images, software deployments, and application patching while also identifying and resolving desktop security issues.</li>
@@ -81,7 +94,6 @@ layout: page
 	<li>Deployed regularly scheduled and out of band security/OS patches and updates via LANDesk and other mechanisms.</li>
 	<li>Co-developed an asset management system to track physical assets via barcode scanning devices.</li>
 </ul>
-
 <h4>Systems Support Analyst | July 2009 - September 2010</h4>
 <ul class="skill-list">
 	<li>Actively monitored an extensive production environment for washingtonpost.com and other high-traffic Post properties.</li>
