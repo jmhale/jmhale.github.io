@@ -100,7 +100,7 @@ animation: true
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-admin
+  - jekyll-sitemap
 
 jekyll-mentions:
     base_url: https://github.com
@@ -113,4 +113,3 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - travis.sh

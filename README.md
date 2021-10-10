@@ -1,11 +1,16 @@
 # CV Site
 
-A Jekyll site for https://jameshale.net, based on the [Indigo theme](https://github.com/sergiokopplin/indigo) by Sérgio Kopplin.
+A Jekyll site for [https://hale.dev](https://hale.dev), based on the [Indigo theme](https://github.com/sergiokopplin/indigo) by Sérgio Kopplin.
 
-## To Deploy:
+## To Test:
 ```
 bundle exec jekyll build
-bundle exec htmlproofer ./_site --only-4xx
+bundle exec htmlproofer --url-ignore '/linkedin.com/' --assume_extension ./_site
 ```
 
-Upload generated assets in `./_site` to your hosting provider.
+## Run Locally:
+```
+bundle exec jekyll serve
+```
+
+Assets are generated in `./_site` and uploaded to S3 using Github Actions.

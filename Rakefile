@@ -1,9 +1,10 @@
-require 'html/proofer'
+require 'html-proofer'
 
 # rake test
 desc "build and test website"
 
 task :test do
   sh "bundle exec jekyll build"
-  HTML::Proofer.new("_site", {:href_ignore=> ['http://localhost:4000'], :verbose => true}).run
+  options = { :assume_extension => true, :url_ignore => "/linkedin.com/" }
+  HTMLProofer.check_directory("./_site", options).run
 end
