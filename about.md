@@ -33,7 +33,7 @@ layout: page
 <h3>Salesforce.com</h3>
 <h4>Senior Manager, Security Engineering | July 2021 - Present</h4>
 <ul class="skill-list">
-	<li>Manage a team of 7 engineers. Drive career development discussions, talent reviews, and interview panels. Ensure members of the team are on the right track with engineering deliverables.</li>
+	<li>Manage a team of 8 engineers. Drive career development discussions, talent reviews, and interview panels. Ensure members of the team are on the right track with engineering deliverables.</li>
 	<li>Coordinate engineering resources with partner teams.</li>
 	<li>Participate in security architecture discussions and provide input to key decision making. Taking the output of these discussions and delivering it to my team and other stakeholders as engineering deliverables.</li>
 	<li>Provide technical leadership and guidance, mentor junior engineers, and participate in code reviews.</li>
