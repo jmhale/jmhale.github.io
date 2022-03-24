@@ -91,7 +91,7 @@ DEPENDENCIES
   jekyll
   jekyll-seo-tag
   jekyll-sitemap
-  nokogiri (~> 1.13)
+  nokogiri (~> 1.13.3)
   rake (~> 13.0)
   webrick
 
