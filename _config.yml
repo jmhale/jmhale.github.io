@@ -1,6 +1,6 @@
 name: James Hale
-bio: Infosec engineer who specializes in automation and cloud infrastructure.
-description: Infosec engineer who specializes in automation and cloud infrastructure.
+bio: Infosec engineering leader who specializes in automation and cloud infrastructure.
+description: Infosec engineering leader who specializes in automation and cloud infrastructure.
 external-image: false
 picture: assets/images/profile.jpg
 resume: true
@@ -8,8 +8,8 @@ resume-external: true
 resume-url: https://hale.dev/cv.pdf
 url: https://hale.dev
 permalink: /:title/
-analytics-google: 'UA-83291518-1'
-twitter: 0xhale
+# analytics-google: 'UA-83291518-1'
+bsky: hale.aero
 linkedin: jamesmhale
 github: jmhale
 email: james@hale.dev
@@ -19,15 +19,15 @@ mastodon:
 authors:
     jameshale:
         name: James Hale
-        bio: Infosec engineer who specializes in automation and cloud infrastructure.
+        bio: Infosec engineering leader who specializes in automation and cloud infrastructure.
         external-image: false
         picture: assets/images/profile.jpg
-        twitter: 0xhale
+        bsky: hale.aero
 
 width: normal
 projects: true
 about: true
-blog: https://halesec.com
+# blog: https://halesec.com
 read-time: true
 show-tags: true
 related: true

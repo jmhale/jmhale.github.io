@@ -118,4 +118,11 @@
             <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
         </a>
     {% endif %}
+
+    {% if site.bsky %}
+        <a class="link" data-title="{{ site.bsky }}" href="https://bsky.app/profile/{{ site.bsky }}">
+            <svg class="icon icon-bluesky"><use xlink:href="#icon-bluesky"></use></svg>
+        </a>
+    {% endif %}
+
 </div>
